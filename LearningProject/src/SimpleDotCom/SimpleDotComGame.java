@@ -1,4 +1,5 @@
-package SimpleDotCom;
+// простая версия игры (с ошибкой засчитывания одного и того же попадания)
+package SimpleDotCom; 
 
 public class SimpleDotComGame {
 
