@@ -8,7 +8,9 @@ import java.awt.event.*;
 
 public class SimpleChatClientA {
 	
+	JTextArea incoming;
 	JTextField outgoing;
+	BufferedReader reader;
 	PrintWriter writer;
 	Socket sock;
 	
