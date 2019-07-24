@@ -1,24 +1,26 @@
 package Futurama;
 
-public enum Fry {
-	Amy("китаянка", "секси"),
-	Fry("тупой", "ленивый"),
-	Rick("алкоголик", "гений"),
-	Homer("жирный", "прикольный"),
-	Bender("железный", "злой"),
-	Stewe("злой","гений");
+public class Fry {
+	private String fname;
+	private String lname;
+	private static int count = 0;
 	
-	private final String desc1;
-	private final String desc2;
+	public Fry(String fn, String ln) {
+		fname = fn;
+		lname = ln;
+		count++;
+		System.out.printf("%s %s: в фильме 12 стульев -%d персонаж(а\\ей. \n", fname, lname, count);
+	}
 	
-	Fry(String d1, String d2) {
-		desc1 = d1;
-		desc2 = d2;
+	public String getFname() {
+		return fname;
 	}
-	public String getDesc1() {
-		return desc1;
+	
+	public String getLname() {
+		return lname;
 	}
-	public String getDesc2() {
-		return desc2;
+	
+	public static int getCount() {
+		return count;
 	}
 }

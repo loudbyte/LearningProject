@@ -4,14 +4,14 @@ import java.util.EnumSet;
 public class Bender {
 
 	public static void main(String[] args) {
-		for(Fry heroes : Fry.values()) {
-			System.out.printf("%s - %s и %s\n", heroes, heroes.getDesc1(), heroes.getDesc2());
-		}
+		Fry pers1 = new Fry("Остап", "Бендер");
+		Fry pers2 = new Fry("Киса", "Воробьянинов");
+		Fry pers3 = new Fry("Отец", "Федор");
 		
-		System.out.println("\nА тут мы видим, как выглядит вывод диапазона перечислений!!!\n");
+		System.out.println();
 		
-		for(Fry heroes : EnumSet.range(Fry.Fry,Fry.Bender)) {
-			System.out.printf("%s - %s и %s\n", heroes, heroes.getDesc1(), heroes.getDesc2());
-		}
+		System.out.println(pers3.getFname());
+		System.out.println(pers3.getLname());
+		System.out.println(Fry.getCount());
 	}
 }
