@@ -13,5 +13,6 @@ public class Bender {
 		System.out.println(pers3.getFname());
 		System.out.println(pers3.getLname());
 		System.out.println(Fry.getCount());
+		
 	}
 }
