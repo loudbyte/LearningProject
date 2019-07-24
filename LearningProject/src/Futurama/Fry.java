@@ -23,4 +23,5 @@ public class Fry {
 	public static int getCount() {
 		return count;
 	}
+	
 }
